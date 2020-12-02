@@ -26,7 +26,7 @@ body {
 }
 
 .appointment-button {
-    background: black;
+    background: #4A314D ;
     color: white;
     min-width: 260px;
 }
@@ -42,7 +42,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #F40076;
     color: white;
 }
 
