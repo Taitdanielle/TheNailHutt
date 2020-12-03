@@ -80,7 +80,12 @@ Balsamiq wireframes tool was used to create all wireframes for this project. I r
 You can find the wireframes for this website [here](https://github.com/Taitdanielle/TheNailHutt/tree/main/wireframes).
 ### Features
 * Nav bar
-* scrolling landing page
-* products carousel
-* about page
-* services page
+* Scrolling landing page
+* Products carousel
+* About page
+* Services page
+### Existing Features
+## Testing
+
+### Deployment
+The Nail Hutt was developed usnig the GitPod online IDE and using Git and GitHub for version control. It is hosted on the Heroku platform.
