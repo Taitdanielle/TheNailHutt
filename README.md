@@ -89,3 +89,10 @@ You can find the wireframes for this website [here](https://github.com/Taitdanie
 
 ### Deployment
 The Nail Hutt was developed usnig the GitPod online IDE and using Git and GitHub for version control. It is hosted on the Heroku platform.
+### Local Deployment
+#### Heroku Deployment
+## Credits
+### Code
+### Content and Media
+colours from coloors
+pictures from dreamstime
