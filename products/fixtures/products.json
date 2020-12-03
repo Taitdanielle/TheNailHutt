@@ -1,0 +1,19 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0001",
+      "name": "Jollywood-Snow Biz",
+      "description": "Snow Biz: Shimmery silvery grey. 14ml",
+      "price": 3.90,
+      "category": 2,
+      "rating": 4.9,
+      "has_weight": "True",
+      "is_a_service": "False",
+      "image": "media/china-glaze-jollywood-snow-biz.jpg",
+      "image_url": "",
+      "discontinued": "False"
+    }
+  }
+]
