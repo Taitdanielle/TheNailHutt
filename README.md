@@ -28,3 +28,12 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 * Code
 * Content and Media
 * Acknowledgments
+### Disclamier 
+***
+## UX
+### Projet Goals
+#### Target Audience
+* People who enjoy lookig after themselves
+* People who like to treat themselves
+* People who enjoy socialising 
+* People who want to purchase various nail care products 
