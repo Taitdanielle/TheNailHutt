@@ -53,3 +53,5 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 * As a user, I want to view and modify my order in the cart before completing it, so that I can make last changes easily before proceeding to payment.
 * As a user, I expect to make payments by card in a safe and secure way, so that I won't be concerned about the safety of my card details and won't be charged incorrectly.
 * As a user, I want to receive an email confirmation after checkout, so that I can make sure that payment was successfull.
+#### New User
+* As a new user, I want to create my own account so that I can Save, View and Edit my profile details. Also to view my order history.
