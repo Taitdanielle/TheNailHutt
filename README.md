@@ -55,3 +55,8 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 * As a user, I want to receive an email confirmation after checkout, so that I can make sure that payment was successfull.
 #### New User
 * As a new user, I want to create my own account so that I can Save, View and Edit my profile details. Also to view my order history.
+#### Returning User
+* As a user, I want to be able to change my password, so that I can create the stronger password (e.g.in case I published my old password somewhere) to protect my personal details. 
+* As a user, I want to reset my password if I forgot it, so that I can get access to my profile again.
+* As a user, I want to easily login anytime, so that I can get access to my saved profile details and make next purchase quicker.
+* As a user, I want to be able to change my email or add the second email, so that I can have an easier access to the website's functionality and to gain more flexibility.
