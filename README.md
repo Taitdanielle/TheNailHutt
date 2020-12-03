@@ -101,3 +101,5 @@ I would like to thank everyone who helped me with this project. I appreciate you
 * My mentor Simen Daehlin(best mentor) for his suppose, tips, advice and also for beliving in me and making me relise I can actually do it!
 * All the Code Institue Tutors who put up with my many many meltdowns!
 * My fellow students and the Slack Community I don't know where I would have been without the guys on that. 
+## Disclaimer
+This site is made for **educational purposes** only. 
