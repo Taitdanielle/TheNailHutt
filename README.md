@@ -73,3 +73,8 @@ I used warm bright colours to go with the company logo.You can see the colours [
 The typefaces I used across the project are:
 * [Quicksand](https://fonts.google.com/specimen/Quicksand) I have used for the paragraphs, I really like this font as it goes well with the business logo and it is also easy to read.
 * [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?preview.text=Products&preview.text_type=custom) I have used this for the page titles as it works well with the current theme and other typefaces.
+I think both typfaces work well with the style and colours of the website. 
+#### Icons
+### Wireframes
+Balsamiq wireframes tool was used to create all wireframes for this project. I really enjoy using this tool.
+You can find the wireframes for this website [here](https://github.com/Taitdanielle/TheNailHutt/tree/main/wireframes).
