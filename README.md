@@ -67,3 +67,5 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 #### Framework
 * **Bootstrap**, front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 * **JQuery** is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation
+#### Colour Scheme
+I used warm bright colours to go with the company logo.You can see the colours [here](https://github.com/Taitdanielle/TheNailHutt/blob/main/wireframes/colour-palet.png) 
