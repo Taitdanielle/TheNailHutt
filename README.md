@@ -95,6 +95,8 @@ The Nail Hutt was developed usnig the GitPod online IDE and using Git and GitHub
 ### Content and Media
 colours from coloors
 pictures from dreamstime
+Top of home page Photo by Artem Beliaikin from Pexels
+
 ### Acknowledgements
 I would like to thank everyone who helped me with this project. I appreciate you all!
 * My mentor Simen Daehlin(best mentor) for his suppose, tips, advice and also for beliving in me and making me relise I can actually do it!
