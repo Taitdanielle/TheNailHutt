@@ -68,4 +68,8 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 * **Bootstrap**, front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 * **JQuery** is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation
 #### Colour Scheme
-I used warm bright colours to go with the company logo.You can see the colours [here](https://github.com/Taitdanielle/TheNailHutt/blob/main/wireframes/colour-palet.png) 
+I used warm bright colours to go with the company logo.You can see the colours [here](https://github.com/Taitdanielle/TheNailHutt/blob/main/wireframes/colour-palet.png)
+#### Typography 
+The typefaces I used across the project are:
+* [Quicksand](https://fonts.google.com/specimen/Quicksand) I have used for the paragraphs, I really like this font as it goes well with the business logo and it is also easy to read.
+* [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?preview.text=Products&preview.text_type=custom) I have used this for the page titles as it works well with the current theme and other typefaces.
