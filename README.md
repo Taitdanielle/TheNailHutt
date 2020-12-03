@@ -4,3 +4,27 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 
 ## Content
 ---
+* #### UX 
+  * Project Goals
+  * User Stories
+  * Design
+  * Wireframes
+* #### Features
+  * Existing Features
+  * Features Left to Impliment
+* #### Information Architecture
+  * Database Choice
+  * Data Modeling
+* #### Technologies Used
+  * Languages
+  * Libriaries and Frameworks
+  * Tools
+  * Databases
+* #### Testing
+* #### Deployment
+* Local Deployment
+* Heroku Deployment
+* ### Credits
+* Code
+* Content and Media
+* Acknowledgments
