@@ -60,3 +60,6 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 * As a user, I want to reset my password if I forgot it, so that I can get access to my profile again.
 * As a user, I want to easily login anytime, so that I can get access to my saved profile details and make next purchase quicker.
 * As a user, I want to be able to change my email or add the second email, so that I can have an easier access to the website's functionality and to gain more flexibility.
+#### Admin(website owner)
+* As a user, I want to have convenient and secure admin interface available only for website admin, so that I can add, edit and remove products/services.
+* As a user, I want to receive emails from the users when they fill out the contact form, so that I can reply on them satisfying users queries.
