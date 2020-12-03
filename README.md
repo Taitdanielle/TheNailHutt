@@ -78,3 +78,9 @@ I think both typfaces work well with the style and colours of the website.
 ### Wireframes
 Balsamiq wireframes tool was used to create all wireframes for this project. I really enjoy using this tool.
 You can find the wireframes for this website [here](https://github.com/Taitdanielle/TheNailHutt/tree/main/wireframes).
+### Features
+* Nav bar
+* scrolling landing page
+* products carousel
+* about page
+* services page
