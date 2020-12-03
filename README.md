@@ -37,3 +37,7 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 * People who like to treat themselves
 * People who enjoy socialising 
 * People who want to purchase various nail care products 
+
+#### Visitor/ User Goals:
+* Purchase products/services that are shown on the website in a safe and secrure enviroment.
+* Get relevent information on the products and treatments available.
