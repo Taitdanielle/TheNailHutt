@@ -11,8 +11,72 @@
     "pk": 2,
     "model": "products.category",
     "fields": {
-      "name": "jollywood",
-      "friendly_name": "Jollywood Snow Biz"
+      "name": "jollywood_snow_biz",
+      "friendly_name": "Snow Biz"
+    }
+  },
+     {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_celebri_tree",
+      "friendly_name": "Celebri Tree"
+    }
+  },
+       {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_deck_the_malls",
+      "friendly_name": "Deck the Malls"
+    }
+  },
+       {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_santa_monica_claus",
+      "friendly_name": "Santa Monica Claus"
+    }
+  },
+       {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_slay_your_line",
+      "friendly_name": "Slay Your Line"
+    }
+  },
+       {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_valent_the_sleigh",
+      "friendly_name": "Valet the Sleigh"
+    }
+  },
+       {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_kiss_spell",
+      "friendly_name": "Kiss Spell"
+    }
+  },
+       {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_paybacks_a_witch",
+      "friendly_name": "Paybacks a Witch"
+    }
+  },
+       {
+    "pk": 10,
+    "model": "products.category",
+    "fields": {
+      "name": "jollywood_spell_the_tea",
+      "friendly_name": "Spell the Tea"
     }
   }
 ]
