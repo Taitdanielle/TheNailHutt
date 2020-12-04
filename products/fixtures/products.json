@@ -8,11 +8,112 @@
       "description": "Shimmery silvery grey. 14ml",
       "price": 3.90,
       "category": 2,
-      "volume": "True",
-      "is_a_service": "False",
       "image": "media/china-glaze-jollywood-snow-biz.jpg",
-      "image_url": "https://ibb.co/b5M5nPb",
-      "discontinued": "False"
+      "image_url": "https://ibb.co/b5M5nPb"
+    }
+  },
+    {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0002",
+      "name": "Jollywood-Celebri Tree",
+      "description": " Dark emerald tinsel 14ml.",
+      "price": 5.82,
+      "category": 3,
+      "image": "media/china-glaze-jollywood-celebri-tree.jpg",
+      "image_url": "https://ibb.co/p1WpNY8"
+    }
+  },
+      {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0003",
+      "name": "Jollywood-Deck the Malls",
+      "description": "A deep blue glitter 14ml.",
+      "price": 5.82,
+      "category": 4,
+      "image": "media/china-glaze-jollywood-deck-the-malls.jpg",
+      "image_url": "https://ibb.co/LdCVTDr"
+    }
+  },
+        {
+      "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0004",
+      "name": "Jollywood-Santa Monica Claus",
+      "description": "Classic red holographic flakes 14ml.",
+      "price": 5.82,
+      "category": 5,
+      "image": "media/china-glaze-jollywood-santa-monica-claus.jpg",
+      "image_url": "https://ibb.co/KG044sD"
+    }
+  },
+      {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0005",
+      "name": "Jollywood-Slay your Line",
+      "description": "Purple, blue with a silver shimmer. 14ml.",
+      "price": 5.82,
+      "category": 6,
+      "image": "media/china-glaze-jollywood-slay-your-line.jpg",
+      "image_url": "https://ibb.co/1sdwNLt"
+    }
+  },
+        {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0006",
+      "name": "Jollywood-Valet the Sleigh",
+      "description": "A deep purple glitter 14ml.",
+      "price": 5.82,
+      "category": 7,
+      "image": "media/china-glaze-jollywood-valet-the-sleigh.jpg",
+      "image_url": "https://ibb.co/PjjKjSC"
+    }
+  },
+          {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0007",
+      "name": "Jollywood-Kiss Spell",
+      "description": "A burgundy shimmer matte 14ml.",
+      "price": 8.95,
+      "category": 8,
+      "image": "media/china-glaze-spellbound-kiss-spell.jpg",
+      "image_url": "https://ibb.co/DrzBwxd"
+    }
+  },
+            {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0008",
+      "name": "Jollywood-Paybacks a Witch",
+      "description": "A Enchanting Orange Shimmer 14ml.",
+      "price": 8.95,
+      "category": 9,
+      "image": "media/china-glaze-spellbound-paybacks-a-whitch.jpg",
+      "image_url": "https://ibb.co/R9p5vG8"
+    }
+  },
+              {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "C0009",
+      "name": "Jollywood-Spell the Tea",
+      "description": "A Grey Shimmer 14ml.",
+      "price": 8.95,
+      "category": 10,
+      "image": "media/china-glaze-spellbound-spell-the-tea.jpg",
+      "image_url": "https://ibb.co/TP26G4Z"
     }
   }
 ]
