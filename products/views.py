@@ -14,10 +14,10 @@ def all_products(request):
 
 def product_detail(request, product_id):
 
-    products = get_object_or_404(product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     context = {
-        'product': products,
+        'product': product,
     }
     
     return render(request, 'products/product_detail.html', context)    
