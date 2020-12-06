@@ -24,7 +24,7 @@ body {
 .main-logo-link {
     width: fit-content;
 }
-
+.products-button,
 .appointment-button {
     background: #4A314D ;
     color: white;
