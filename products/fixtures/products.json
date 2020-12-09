@@ -128,5 +128,18 @@
       "image": "media/china-glaze-fairy-dust.jpg",
       "image_url": "https://i.ibb.co/1XLJWHZ/china-glaze-fairy-dust.jpg"
     }
+  },
+                {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "C00011",
+      "name": "Jollywood-Fairy Dust",
+      "description": "An enchanting, shimmering topcoat 14ml.",
+      "price": 8.95,
+      "category": 2,
+      "image": "media/china-glaze-fairy-dust.jpg",
+      "image_url": "https://i.ibb.co/1XLJWHZ/china-glaze-fairy-dust.jpg"
+    }
   }
 ]
