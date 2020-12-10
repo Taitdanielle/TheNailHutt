@@ -184,7 +184,65 @@ Custom 404 and 500 pages contain heading, short information about the error and 
 rating, reiews, social log in more products ans services
 ## Information Architecture
 #### Database Choice
+During the development phase I worked with sqlite3 database which is installed with Django.
+For deployment(production), a PostgreSQL database is provided by Heroku as an add-on.
 
+The User model used in this project is provided by Django as a part of defaults django.contrib.auth.models. More information about Django’s authentication system can be found here.
+#### Data Modeling
+##### Profile App
+| Name        | Database Key  | Field Type  | Validation |
+| ------------- |:-------------:| -----:|------------:|
+| User   | user | OneToOneField'User' | on_delete=models.CASCADE
+| Full Name | centered      |   $12 |
+| Phone number | are neat      |    $1 |
+| Address Line 1
+| Address Line 2
+| Town/City |
+| County |
+| Postcode |
+| Country |
+
+Products App
+
+| Name | Database Key | Field Type | Validation |
+|------|:------------:|------------:|----------:|
+| Category |
+| Description |
+| Price |
+| Image |
+| Image URL |
+| SKU |
+
+Category 
+
+| Name | DataBase Key | Field Type | Validation |
+|------|:-------------:|-----------:|----------:|
+| Programmaric Name | 
+| Friendly Name |
+
+Checkout App 
+
+Order
+| Name  |	Database Key |	Field Type |	Validation| 
+|-------:|---------------:|---------:|------------:|
+| Order  |Number	order_number |	CharField	| max_length=32, null=False, editable=False |
+| Profile |	profile |	ForeignKey 'Profile' |	on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' |
+| Full Name |	full_name |	CharField	| max_length=70, null=False, blank=False |
+| Email	email |	EmailField |	| max_length=254, null=False, blank=False |
+| Phone number |	phone_number |	CharField	| max_length=20, null=False, blank=False |
+| Address Line1 |	address_line1 |	CharField	| max_length=60, null=False, blank=False |
+| Address Line2 |	address_line2 |	CharField	| max_length=60, null=False, blank=False |
+| Town/City |	town_or_city |	CharField	| max_length=50, null=False, blank=False
+| County |	county |	CharField	| max_length=50, null=True, blank=True |
+| Postcode |	postcode |	CharField	| ax_length=20, null=True, blank=True |
+| Country |	country |	CountryField	| blank_label='Country*', null=False, blank=False |
+| Purchase Date |	purchase_date |	DateTimeField	| auto_now_add=True |
+| Delivery Cost |	delivery_cost |	DecimalField	| max_digits=6, decimal_places=2, null=False, default=0 |
+| Order Total |	order_total |	DecimalField	m| ax_digits=10, decimal_places=2, null=False, default=0 |
+| Grand Total |	grand_total |DecimalField	| max_digits=10, decimal_places=2, null=False, default=0 |
+| Original Cart |	original_cart |	TextField	| null=False, blank=False, default='' |
+| Stripe Pid |	stripe_pid |	CharField	| max_length=254, null=False, blank=False, default='' |
+| Comment |	comment |	TextField	| max_length=254, null=True, blank=True |
 ## Testing
 ## Bugs
 had to change image urls as they were not wokring in large screen size. 
