@@ -160,6 +160,19 @@ Contact page consists of 2 sections:
 
 Contact form that's offered to fill out (name, email, message) if a user has any questions or queries. The real email will be sent to the admin of the website (handling by django send_mail() functionality). If an authenticated user opens the contact page, the full name (if provided in user's profile) and email fields are pre-populated.
 Contact details section provides company's address, phone number and email, along with a map showing the location of The Nail Hutt. By clicking at the red marker, a user can check the opening hours. Google Map API was used to accomplish that.
+### **Admin Product Management**
+Product managment feature is available only for a superuser. The Admin page allows an owner of the website to add new products/services by filling out one of the two forms - Add New Product and Add New Service on the Product Management page. If the form is valid, the product/service is added to the database and the user is redirected to the new created product/service details page. The defensive design is implemented to restrict other than admin users to manually enter the url to get access to the page. User will be redirected to the home page with the toast error messages appeared. Edit and Delete product/service functionality allow an admin to make the corresponding manipulations. The Delete functionality was updated during the development, so the product/service is not being completely removed from the database, but set as discontinued and is hidden from the user's view and can be set as active again any time.
+### **Django-allauth features**
+Sign Up
+The sign up page allows a user to create a new account. The user is asked to fill the fields "email", "username", "password" and "password (again)". When adding a username, the code compares it against existing email to ensure that it is unique. If user's input does not meet requirements, flash messages will inform a user about the error. When the form is submitted, a verification email is sent to the user's email to verify the email and finish registration process.
+There is also a link to the login page for existing users at the bottom of the form.
+The Registration page is only available to anonymous users and logged-in users are redirected out automatically.
+
+Login
+The login page features the form with "username" and "password" fields, allowing registered users to log into their account. If the login was successfull, a user is redirected to the home page and the toast success message appears informing that the log in was successful. Otherwise, flash messages will be displayed about incorrect user's input.
+There is also a link to the sign up page for new users at the bottom of the form. As well as that, there's a link to the forgot password functionality, using which a user can reset their password. The login page is only available to anonymous users and logged-in users are redirected out automatically.
+
+
 ## Testing
 ## Bugs
 had to change image urls as they were not wokring in large screen size. 
