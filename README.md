@@ -291,19 +291,29 @@ To be able to run this project, the following tools have to be installed:
 Apart from that, you also need to create accounts with the following services:
 
 * Stripe
-
+#### Directions
+1. You can clone this repository directly into the editor of your choice by pasting the following command into the terminal:
+`git clone https://github.com/Taitdanielle/TheNailHutt`
+Alternatively, you can save a copy of this repository by clicking the green button Clone or download , then Download Zip button, and after extract the Zip file to your folder.
+In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
 #### Heroku Deployment
+To start Heroku Deployment process, you need to clone the project as described in the Local deployment section above.
+To deploy the project to Heroku the following steps need to be completed:
 ## Credits
 ### Code
 ### Content and Media
 colours from coloors
 pictures from dreamstime
-Top of home page Photo by Artem Beliaikin from Pexels
+* Top of home page Photo by Artem Beliaikin from Pexels
+*  Products content and images taken from [here](wwww.nailpolishdirect.co.uk)
+* Logo was created by me in Photoshop before this project
+* Nail pictures from my sisters business [TheNailHutt](https://www.facebook.com/thenailhutt)
+
 
 ### Acknowledgements
 I would like to thank everyone who helped me with this project. I appreciate you all!
-* My mentor Simen Daehlin(best mentor) for his support, tips, advice and also for beliving in me and making me relise I can actually do it!
+* My mentor Simen Daehlin[best mentor](https://github.com/Eventyret)for his support, tips, advice and also for beleiving in me and making me relise I can actually do it!
 * All the Code Institue Tutors who put up with my many many meltdowns!
-* My fellow students and the Slack Community I don't know where I would have been without the guys on that. 
+* My fellow students and the Slack Community I don't know where I would have been without the guys on that. But especially [Fran](https://github.com/fdeboo) she kept me going most times and helped me A LOT! What an awesome person.
 ## Disclaimer
 This site is made for **educational purposes** only. 
