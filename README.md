@@ -243,12 +243,55 @@ Order
 | Original Cart |	original_cart |	TextField	| null=False, blank=False, default='' |
 | Stripe Pid |	stripe_pid |	CharField	| max_length=254, null=False, blank=False, default='' |
 | Comment |	comment |	TextField	| max_length=254, null=True, blank=True |
+## Technologies Used
+### Languages
+* HTML
+* CSS 
+* Java Script
+* Python
+* Jinga 
+
+### Libriaries and Frameworks
+* Django 
+* Bootstrap
+* Google fonts
+* Font Awesome
+* JQuery
+* Psycopg2
+* Stripe
+* Django Crispy forms
+* Cloudinary
+### Tools
+* Gitpod 
+* Git
+* GitHud
+* PIP 
+* Heroku
+* Cloudinary 
+* Tiny png
+* Balsamiq
+* Coolors.co
+### Databases
+* sqlite3
+* PostgreSQL
+
+
 ## Testing
 ## Bugs
 had to change image urls as they were not wokring in large screen size. 
 ### Deployment
-The Nail Hutt was developed usnig the GitPod online IDE and using Git and GitHub for version control. It is hosted on the Heroku platform.
+The Nail Hutt was developed using the GitPod online IDE and using Git and GitHub for version control. It is hosted on the Heroku platform.
 ### Local Deployment
+To be able to run this project, the following tools have to be installed:
+
+* An IDE of your choice (I used GitPod for creating this project)
+* Git
+* PIP
+* Python3
+Apart from that, you also need to create accounts with the following services:
+
+* Stripe
+
 #### Heroku Deployment
 ## Credits
 ### Code
