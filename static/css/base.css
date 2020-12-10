@@ -1,12 +1,14 @@
 html {
     height: 100%;
 }
-
 body {
+    font-family: 'Amatic SC', cursive;
+}
+
+.hero-image {
+    height: 100vh;
     background: url('/media/home1.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
-    font-family: 'Amatic SC', cursive;
     }
     
 .icon {
@@ -36,12 +38,10 @@ body {
     color: white;
 }
 
-.appointment-button:hover,
-.appointment-button:active,
-.appointment-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
+.landing-button:hover,
+.landing-button:active,
+.landing-button:focus,
+ {
     background: #F40076;
     color: white;
 }
@@ -54,15 +54,7 @@ body {
     border: 1px solid black !important;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left 0;
-    position: fixed; 
-    background-color: white;
-    z-index: -1;
-}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
