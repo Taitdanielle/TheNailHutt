@@ -84,38 +84,78 @@ You can find the wireframes for this website [here](https://github.com/Taitdanie
 ### Features
 The Nail Hutt is composed by applications: `Landing`, `Partys`, `Products`(Products & Services), `Shopping Cart`, `Checkout` and `Profiles`.
 ### Existing Features
-## **NavBar**
+#### **NavBar**
 The navbar is fixed at the top of the page at all times, This allows a user to easisly navigate through the website. The name The Nail Hutt is located at the top lefthand corner on a desktop and in the center on smaller devices. It redirects a user to the home/landing page when clicked. On smalled screens such as tablet and mobile the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and will collapse back when clicked again or off the page. 
 Navbar also contains a shopping cart icon, with a grand total displated if there are items in the cart added. It changes colour to blue when there in somthing in the cart to catch the users attention, and remains purple when the cart is empty. Clicking on the cart redirects a user to the shopping cart page.
 The Navbar links change if you are a logged in or non logged in users. 
 * for non logged in users the nav bar will show login/register links.
 * for logged in users the navbar contains the "My Account" nav item which toggles down the following links that re direct the user to the followin pages, My profile, Order history and Logout.
 * for admin apart from all the links available for logged in users mentioned aboove, They also havea link to the **Product Management Page**. Where the admin can add new profucts and services. This is **only** available for **Superusers**.
-## **Landing/home page**
+#### **Landing/home page**
 The landing page serves to attract new users and customers to the business. to give a clear understanding about that and to attract the users to use the website(book appointmnet and buy products).Smooth annimation on the scroll is applied to all sections of the page.
 * Hero image
 * products carousel
 * services carousel 
 * quote section
 * party section
-## **Party Page**
+#### **Party Page**
 This page reprosents the different kind of nail partys that are available within  The Nail Hutt. A short paragraph explaines to the users how the events are organised and how to book them. 
 There's also a Find us here section, showing the address, phone number and the link to the Facebook page, that can be checked to see more details about the partys. On the large screen, The animation on scroll is applied to that image and to the main paragraph.
-## **Products Page**
+#### **Products Page**
 * The "All products" page displays product cards, including the following information: category, name, price. All product cards are clickable and redirect a user to the individual product page with detailed information (by clicking on the image or the "View details" button).
 * Clicking on Add to cart button will add the product to the cart with quantity equal to 1, clicking again will simply updates the quantity by 1. This functionality was added to enhance user experiance, to allow users straight away add an item to the cart without viewing products details and giving more flexibility to use the website.
 * If the user is admin, there are also 2 buttons displayed in the cards: Edit and Delete. Clicking Edit button redirects admin to the Edit Product page. Delete button toggles the Delete modal. It asks a superuser to confirm if the product is to be deleted. If so, upon clicking "Delete" button, the product will not be removed from the database, but will set as discontinued and will be removed from the user's view. Then the page reloads and the toast-message will inform about the sucessfull deletion. There is also a button "Cancel" that closes the modal when it's clicked. These actions can be done only by superuser, attempts to access them by other users will end up with redirection to the landing page with toast error messages displayed.
-## **Product Detail Page**
+#### **Product Detail Page**
 * The product details page displays information about product selected: category, name, description, price and product image (or placeholder if no image was added). Clicking the image will open it in the new tab, if the image_url is assigned.
 * The item quantity can be assigned filling the quantity form, the validation is in place restricting the quantity to the range of 1-999. The validation errors will be displayed, if the user tries to input the numbers outside of that range.
 Product can be added to the cart by clicking Add to cart button, that will be reflected in the cart icon in the navbar (grand total will be increased there). As well as that, the toast success message will be displayed when the product is added to the cart.
 * If the user is admin, there are also 2 buttons displayed below the product name: Edit and Delete. Clicking Edit button redirects admin to the Edit Product page. Delete button toggles the Delete modal. It asks a superuser to confirm if the product is to be deleted. If so, upon clicking "Delete" button, the product will not be removed from the database, but will set as discontinued and will be removed from the user's view. Then the page reloads and the toast-message will inform about the sucessfull deletion. There is also a button "Cancel" that closes the modal when it's clicked. These actions can be done only by a superuser, attempts to access them by other users will end up with redirection to the landing page with toast error messages displayed.
-## **Services Page**
+#### **Services Page**
 * The Services page displays horizontal services cards including the following information: name, description, price and image. No-image placeholder is assigned if no image is provided.
 * The Button "Learn more" redirects a user to the individual service page with detailed information.
 * Similar to products, Edit and Delete are displayed on the cards if the user is admin with the corresponding functionality to render Edit Service page and toggle Delete modal.
-## **Service Details Page**
-## **Contact Page**
+#### **Service Details Page**
+#### **Shopping Cart**
+* Cart page is available for both logged in and non-logged in users, so that it is possible to make purchase being a guest.
+The page contains a summary of the user's order: the item's name, image, quantitie/ number of participants, price, sub-total and sku(for products).
+* The link at the top of the page Continue shopping" navigates a user back to the products page, if a user wants to add something else to the cart.
+* A user can update item's quantity/number of participants and date-time (if it's a service) and remove items from their order completely. To prevent from the accidental clicking the remove button, the modal will be opened on click asking a user to confirm the deletion. If a user tries to enter invalid quantity, error message will be displayed when "Update" button is clicked and will prevent the invalid form submission. The error message will inform about the possible range: 1-999 for product's quantity and 1-100 for service's number of participants fields.
+* Toast messages will be displayed when a user updates/removes items in the cart.
+* At the bottom of the page the cart subtotal, delivery coast and grand total are displayed.
+* There is a Checkout button that takes a user to the checkout page to proceed with the payment.
+#### **Checkout Page**
+* Order summary includes short information about items in the order (image, name, quantity, subtotal, date-time), the link to Edit cart ( that redirects a user to the Cart page), delivery cost and also Total to pay.
+* Checkout form is represented as 3 tabs with the Next and Go back buttons to navigate between the tabs. The form sections are the following: Personal Details, Billing/Shipping info and Payment.
+* If a user already has a profile with the shipping information saved, the form will be pre-populated with this information.
+* The validation messages will be displayed on click Next button, so a user can move on the next tab only if the current form-section is filled with valid information.
+* The save info checkbox allows the form information to be saved to the user's profile for the logged in users.
+* If it's a new or non-logged user there are links to register or login pages, in case a user wants to save the information to their profile.
+* Before proceeding the payment, user can review and check all the information in the table (Form Summary).
+* There's also an optional Comment field for cases if a user has any additional comments to the order.
+* A user is informed how much the card will be charged in the paragraph below the Proceed to payment button.
+* Since the website is made for educational purposes only and the Stripe functionality is only for testing, only 4242 4242 4242 4242 card number will lead to the successfull payment. A user is asked to provide card number, expiration date (any date in future) and CVC (any numbers).
+* A webhook is used to make sure that the order is processed even in the cases when the payment process is interrupted (e.g. if a user accidentally closes the page or browser after clicking "Proceed to payment" button).
+* Once the form is submitted and the payment is successfully proceeded, the Checkout sucesss page is loaded and a confirmation email is sent to the user's email. Also, a toast message appears to ensure the user that the order was processed successfully.
+#### **Checkout success Page**
+* The paragraph with a Thank you message is displayed on the top of the page to inform a user that the payment was processed and the email was sent to the user's email.
+* The 3 sections Order info, Shipping details and Order Summary contain all the information about the completed order.
+Keep shopping button redirects user to the Products page.
+* For logged-in users there's a button View full order history that takes users to the order history page.
+#### **Profile Page**
+Profle feature is available only for authenticated users.
+
+* Profile page contains Personal info section (username and email displayed). Also it contains 2 buttons Change password and Manage emails (changing the current or adding a new email) that take a user to the corresponding pages (that's a part of Django allauth functionality with a customized templates).
+* Shipping details section allows to save the shipping information, so for the next purchase the fields in the checkout form will be pre-filled with this info. User can update this information anytime.
+* View order history link will redirect a user to the Order History page.
+#### Order history** 
+Order history feature is available only for authenticated users.
+
+* If a user has not made any purchases, the paragraph will inform that the order history is empty with a link to the Product page.
+* If there are completed orders, the table with the following fields: Order Number, Date, Items, Total is in place.
+* Clicking the link on the Order number will redirect a user to the checkout success page with all the order information. The Toast info message will tell the user that it's a past confirmation for the order number.
+* View My Profile link will redirect a user to the Profile page.
+
+#### **Contact Page**
 Contact page consists of 2 sections:
 
 Contact form that's offered to fill out (name, email, message) if a user has any questions or queries. The real email will be sent to the admin of the website (handling by django send_mail() functionality). If an authenticated user opens the contact page, the full name (if provided in user's profile) and email fields are pre-populated.
