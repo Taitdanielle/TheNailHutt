@@ -75,16 +75,51 @@ The typefaces I used across the project are:
 * [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?preview.text=Products&preview.text_type=custom) I have used this for the page titles as it works well with the current theme and other typefaces.
 I think both typfaces work well with the style and colours of the website. 
 #### Icons
+Icons are used all over the web, They are good at grabbing a users attention. They help users find content quickly and easily. Another advantage of useing them is breaking language barriers too! They create more user-friendly experience by giving the visual clue of the subject.
+* I used [Font Awesome](https://fontawesome.com/) as the main icon library for social media links, forms, cart, user icons in the navigation.
+* I also used some iscons that were found in a free iscon library called [Flaticon](https://www.flaticon.com/) used in the party and landing pages.
 ### Wireframes
 Balsamiq wireframes tool was used to create all wireframes for this project. I really enjoy using this tool.
 You can find the wireframes for this website [here](https://github.com/Taitdanielle/TheNailHutt/tree/main/wireframes).
 ### Features
-* Nav bar
-* Scrolling landing page
-* Products carousel
-* About page
-* Services page
+The Nail Hutt is composed by applications: `Landing`, `Partys`, `Products`(Products & Services), `Shopping Cart`, `Checkout` and `Profiles`.
 ### Existing Features
+## **NavBar**
+The navbar is fixed at the top of the page at all times, This allows a user to easisly navigate through the website. The name The Nail Hutt is located at the top lefthand corner on a desktop and in the center on smaller devices. It redirects a user to the home/landing page when clicked. On smalled screens such as tablet and mobile the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and will collapse back when clicked again or off the page. 
+Navbar also contains a shopping cart icon, with a grand total displated if there are items in the cart added. It changes colour to blue when there in somthing in the cart to catch the users attention, and remains purple when the cart is empty. Clicking on the cart redirects a user to the shopping cart page.
+The Navbar links change if you are a logged in or non logged in users. 
+* for non logged in users the nav bar will show login/register links.
+* for logged in users the navbar contains the "My Account" nav item which toggles down the following links that re direct the user to the followin pages, My profile, Order history and Logout.
+* for admin apart from all the links available for logged in users mentioned aboove, They also havea link to the **Product Management Page**. Where the admin can add new profucts and services. This is **only** available for **Superusers**.
+## **Landing/home page**
+The landing page serves to attract new users and customers to the business. to give a clear understanding about that and to attract the users to use the website(book appointmnet and buy products).Smooth annimation on the scroll is applied to all sections of the page.
+* Hero image
+* products carousel
+* services carousel 
+* quote section
+* party section
+## **Party Page**
+This page reprosents the different kind of nail partys that are available within  The Nail Hutt. A short paragraph explaines to the users how the events are organised and how to book them. 
+There's also a Find us here section, showing the address, phone number and the link to the Facebook page, that can be checked to see more details about the partys. On the large screen, The animation on scroll is applied to that image and to the main paragraph.
+## **Products Page**
+* The "All products" page displays product cards, including the following information: category, name, price. All product cards are clickable and redirect a user to the individual product page with detailed information (by clicking on the image or the "View details" button).
+* Clicking on Add to cart button will add the product to the cart with quantity equal to 1, clicking again will simply updates the quantity by 1. This functionality was added to enhance user experiance, to allow users straight away add an item to the cart without viewing products details and giving more flexibility to use the website.
+* If the user is admin, there are also 2 buttons displayed in the cards: Edit and Delete. Clicking Edit button redirects admin to the Edit Product page. Delete button toggles the Delete modal. It asks a superuser to confirm if the product is to be deleted. If so, upon clicking "Delete" button, the product will not be removed from the database, but will set as discontinued and will be removed from the user's view. Then the page reloads and the toast-message will inform about the sucessfull deletion. There is also a button "Cancel" that closes the modal when it's clicked. These actions can be done only by superuser, attempts to access them by other users will end up with redirection to the landing page with toast error messages displayed.
+## **Product Detail Page**
+* The product details page displays information about product selected: category, name, description, price and product image (or placeholder if no image was added). Clicking the image will open it in the new tab, if the image_url is assigned.
+* The item quantity can be assigned filling the quantity form, the validation is in place restricting the quantity to the range of 1-999. The validation errors will be displayed, if the user tries to input the numbers outside of that range.
+Product can be added to the cart by clicking Add to cart button, that will be reflected in the cart icon in the navbar (grand total will be increased there). As well as that, the toast success message will be displayed when the product is added to the cart.
+* If the user is admin, there are also 2 buttons displayed below the product name: Edit and Delete. Clicking Edit button redirects admin to the Edit Product page. Delete button toggles the Delete modal. It asks a superuser to confirm if the product is to be deleted. If so, upon clicking "Delete" button, the product will not be removed from the database, but will set as discontinued and will be removed from the user's view. Then the page reloads and the toast-message will inform about the sucessfull deletion. There is also a button "Cancel" that closes the modal when it's clicked. These actions can be done only by a superuser, attempts to access them by other users will end up with redirection to the landing page with toast error messages displayed.
+## **Services Page**
+* The Services page displays horizontal services cards including the following information: name, description, price and image. No-image placeholder is assigned if no image is provided.
+* The Button "Learn more" redirects a user to the individual service page with detailed information.
+* Similar to products, Edit and Delete are displayed on the cards if the user is admin with the corresponding functionality to render Edit Service page and toggle Delete modal.
+## **Service Details Page**
+## **Contact Page**
+Contact page consists of 2 sections:
+
+Contact form that's offered to fill out (name, email, message) if a user has any questions or queries. The real email will be sent to the admin of the website (handling by django send_mail() functionality). If an authenticated user opens the contact page, the full name (if provided in user's profile) and email fields are pre-populated.
+Contact details section provides company's address, phone number and email, along with a map showing the location of The Nail Hutt. By clicking at the red marker, a user can check the opening hours. Google Map API was used to accomplish that.
 ## Testing
 ## Bugs
 had to change image urls as they were not wokring in large screen size. 
@@ -101,7 +136,7 @@ Top of home page Photo by Artem Beliaikin from Pexels
 
 ### Acknowledgements
 I would like to thank everyone who helped me with this project. I appreciate you all!
-* My mentor Simen Daehlin(best mentor) for his suppose, tips, advice and also for beliving in me and making me relise I can actually do it!
+* My mentor Simen Daehlin(best mentor) for his support, tips, advice and also for beliving in me and making me relise I can actually do it!
 * All the Code Institue Tutors who put up with my many many meltdowns!
 * My fellow students and the Slack Community I don't know where I would have been without the guys on that. 
 ## Disclaimer
