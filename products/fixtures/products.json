@@ -125,21 +125,21 @@
       "description": "An enchanting, shimmering topcoat 14ml.",
       "price": 8.95,
       "category": 1,
-      "image": "media/china-glaze-fairy-dust.jpg",
-      "image_url": "https://i.ibb.co/1XLJWHZ/china-glaze-fairy-dust.jpg"
+      "image": "china-glaze-fairy-dust.jpg",
+      "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607438662/Nail%20Polish%20/china-glaze-fairy-dust_jzuuvf.jpg"
     }
   },
-                {
+              {
     "pk": 11,
     "model": "products.product",
     "fields": {
       "sku": "C00011",
-      "name": "Jollywood-Fairy Dust",
+      "name": "Nail Extentions",
       "description": "An enchanting, shimmering topcoat 14ml.",
-      "price": 8.95,
-      "category": 2,
-      "image": "media/china-glaze-fairy-dust.jpg",
-      "image_url": "https://i.ibb.co/1XLJWHZ/china-glaze-fairy-dust.jpg"
+      "price": 30.00,
+      "is_a_service": "True",
+      "image": "nail-extensions.jpg",
+      "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607981383/Nail%20Polish%20/gel-nails_iykmlc.jpg"
     }
   }
 ]
