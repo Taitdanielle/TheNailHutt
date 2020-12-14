@@ -1,0 +1,28 @@
+[
+    {
+        "pk": 11,
+        "model": "products.services",
+        "fields": {
+            "name": "Nail Extentions",
+            "service": 1
+        }
+    },
+
+    {
+        "pk": 2,
+        "model": "products.services",
+        "fields": {
+            "name": "Nail Art",
+            "service": 2
+        }
+    },
+    
+    {
+        "pk": 3,
+        "model": "products.services",
+        "fields": {
+            "name": "Gelish",
+            "service": 3
+        }
+    }
+]
