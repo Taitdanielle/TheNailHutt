@@ -124,7 +124,7 @@
             </div>            
         </div>
 	</header>
-
+    
 	{% if messages %}
 	<div class="message-container"></div>
 	{% endif %}
@@ -136,7 +136,8 @@
 	{% endblock %}
 
 	{% block postloadjs %}
-	{% endblock %}
+    {% endblock %}
+    {% include 'includes/footer.html' %}
 </body>
 
 </html>
