@@ -21,6 +21,13 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+class ServicesAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'service',
+    )    
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Services, ServicesAdmin)
