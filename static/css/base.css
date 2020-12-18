@@ -26,8 +26,8 @@ body {
 .main-logo-link {
     width: fit-content;
 }
-.products-button,
-.appointment-button {
+.landing-btn,
+.landing-btn {
     background: #4A314D ;
     color: white;
     min-width: 260px;
@@ -38,10 +38,11 @@ body {
     color: white;
 }
 
+
 .landing-button:hover,
 .landing-button:active,
-.landing-button:focus,
- {
+.landing-button:focus
+    {
     background: #F40076;
     color: white;
 }
@@ -54,7 +55,41 @@ body {
     border: 1px solid black !important;
 }
 
+/*------------------- Landing Quote */
+.landing-quote {
+min-height:60vh;
+background: url('/static/images/landing/quote-background.jpg') no-repeat center center fixed;
+background-size: cover;
+position: relative;
+opacity: 0.9;
+}
 
+.blockquote {
+font-size: 2rem;
+}
+
+.party-landing-container {
+min-height:60vh;
+background: url('/static/images/landing/party-background.jpg') no-repeat center center fixed;
+background-size: cover;
+position: relative;
+opacity: 0.9;
+}
+
+.message-container {
+    position:fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999999999;
+}
+
+.customer-toast {
+    overflow: visable;
+}
+
+.toast-capper {
+    height: 2px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
