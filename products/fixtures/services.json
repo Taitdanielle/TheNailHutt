@@ -3,25 +3,25 @@
         "pk": 11,
         "model": "products.services",
         "fields": {
-            "name": "Nail Extentions",
+            "name": "Nail Extensions",
             "service": 1
         }
     },
 
     {
-        "pk": 2,
+        "pk": 12,
         "model": "products.services",
         "fields": {
-            "name": "Nail Art",
+            "name": "Gelish",
             "service": 2
         }
     },
     
     {
-        "pk": 3,
+        "pk": 13,
         "model": "products.services",
         "fields": {
-            "name": "Gelish",
+            "name": "Nail Art",
             "service": 3
         }
     }
