@@ -3,7 +3,7 @@ from django import forms
 
 class PartiesForm(forms.Form):
     """
-    A form for parties page
+    A form for contact page
     """
 
     full_name = forms.CharField(
@@ -21,3 +21,4 @@ class PartiesForm(forms.Form):
 
     class Meta:
         fields = ['full_name', 'email', 'message']
+        
