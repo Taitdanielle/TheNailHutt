@@ -54,4 +54,4 @@ def contact_thankyou(request):
     A view to return contact_thankyou page in order \
         to inform user that the message was succseddfully sent
     """
-    return render(request, 'contact/contact_thankyou.html')
+    return render(request, 'contact/thankyou_contact.html')
