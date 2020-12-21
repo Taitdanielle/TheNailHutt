@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class PartysConfig(AppConfig):
-    name = 'partys'
+class PartiesConfig(AppConfig):
+    name = 'parties'
