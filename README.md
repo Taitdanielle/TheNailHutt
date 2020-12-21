@@ -1,6 +1,6 @@
 # The Nail Hutt
 **The Nail Hutt** is a small Nail Salon litrally in a hutt! The perfect place to get away have a cuppa and a chat while you get your chosen treatments done. 
-You can visit The Nail Hutt, Book an appointment or treat yourself to some lovley nail products that will be delivered straight to your door!
+You can visit The Nail Hutt, Book an appointment or treat yourself to some lovley nail products that will be delivered straight to your door! nail_care:
 
 ## Content
 ---
@@ -304,8 +304,8 @@ To deploy the project to Heroku the following steps need to be completed:
 ### Content and Media
 colours from coloors
 pictures from dreamstime
-* Top of home page Photo by Artem Beliaikin from Pexels
-*  Products content and images taken from [here](wwww.nailpolishdirect.co.uk)
+* Images from [Pexels](www.pixels.com)
+* Products content and images taken from [here](wwww.nailpolishdirect.co.uk)
 * Logo was created by me in Photoshop before this project
 * Nail pictures from my sisters business [TheNailHutt](https://www.facebook.com/thenailhutt)
 

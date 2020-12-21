@@ -90,6 +90,58 @@ opacity: 0.9;
 .toast-capper {
     height: 2px;
 }
+
+/* ------Footer */
+footer {
+	background-color: #FFF;
+	color: #fff;
+	min-height: 120px;
+	margin: 0;
+}
+
+#footer-details {
+	padding: 2.5rem;
+}
+
+
+/* footer icons */
+
+.fab {
+	padding: 1.5rem;
+	font-size: 2rem;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footer-details {
+	background: #89D2DC;
+	color: white;
+}
+
+.social-links li a i {
+	width: 32px;
+	height: 32px;
+	padding: 12px 0;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	line-height: 7px;
+	color: #89D2DC;
+	background: transparent;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+	background: #F6C0D0;
+}
+nav a:hover {
+	background-color: #F6C0D0;
+	color: #fff;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
