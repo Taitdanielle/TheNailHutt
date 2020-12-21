@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'landing',
     'bag',
     'contact',
+    'parties',
+
 
     'crispy_forms',
     'storages',
