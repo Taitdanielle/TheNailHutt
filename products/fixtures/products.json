@@ -138,44 +138,5 @@
       "image": "china-glaze-fairy-dust.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607438662/Nail%20Polish%20/china-glaze-fairy-dust_jzuuvf.jpg"
     }
-  },
-              {
-    "pk": 11,
-    "model": "products.product",
-    "fields": {
-      "sku": "C00011",
-      "name": "Nail Extentions",
-      "description": "Nail extensions is a way to get those lovely beautiful nails. Nail extension roughly means adding an artificial tip to your original nail end to give it length. It then gets covered with acrylic, gel or fiberglass.",
-      "price": 30.00,
-      "is_a_service": "True",
-      "image": "nail-extensions.jpg",
-      "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607981383/Nail%20Polish%20/gel-nails_iykmlc.jpg"
-    }
-  },
-                {
-    "pk": 12,
-    "model": "products.product",
-    "fields": {
-      "sku": "C00012",
-      "name": "Gelish",
-      "description": "Gelish is a pure, thin UV gel that is pigmented in various degrees to give colour, which applies like a classic polish, but lasts much longer.",
-      "price": 20.00,
-      "is_a_service": "True",
-      "image": "gelish-nails.jpg",
-      "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607981383/Nail%20Polish%20/geil-nails_abktno.jpg"
-    }
-  },
-                  {
-    "pk": 12,
-    "model": "products.product",
-    "fields": {
-      "sku": "C00013",
-      "name": "Nail Art",
-      "description": "Transform your traditional manicure to one that is bold and expressive.",
-      "price": 20.00,
-      "is_a_service": "True",
-      "image": "nail-art.jpg",
-      "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607981383/Nail%20Polish%20/geil-nails_abktno.jpg"
-    }
   }
 ]
