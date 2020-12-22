@@ -12,7 +12,7 @@
     }
   },
                 {
-    "pk": 12,
+    "pk": 2,
     "model": "products.product",
     "fields": {
       "name": "Gelish",
@@ -24,7 +24,7 @@
     }
   },
                   {
-    "pk": 12,
+    "pk": 3,
     "model": "products.product",
     "fields": {
       "name": "Nail Art",
