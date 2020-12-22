@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12 text-center">
+        <h1 class="uppercase main-heading">Let's Party!</h1>
+    </div>
+</div>
+<div class="col-12 col-lg-6 mb-5 d-none d-lg-block">
+</div>
+
+<div class="col-12 col-lg-6 mb-5 shadow p-4 rounded-lg">
+    <p>Please fill in below form with enquires to our Nail Parties!</p>
+    <form method="POST" action="{% url 'parties' %}">
+        {% csrf_token %}
+        {{ parties_form|crispy }}
+        <div class="text-center mb-2 mt-4">
+            <button type="submit" id="parties-form-btn" class="btn-parties uppercase w-100">
+                <i class="fas fa-paper-plane mr-2"></i> Send
+            </button>
+        </div>
+    </form>
+</div>
