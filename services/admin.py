@@ -1,5 +1,5 @@
 from django.contrib import admin
-
+from .models import Services, ServicesDetail
 # Register your models here.
 
 class ServicesAdmin(admin.ModelAdmin):
@@ -15,8 +15,8 @@ class ServicesAdmin(admin.ModelAdmin):
 class ServicesDetailAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'service',
+        'friendly_name',
     )
 
-admin.site.register(Services, ServicesAdmin)
+
 admin.site.register(Services, ServicesDetailAdmin)

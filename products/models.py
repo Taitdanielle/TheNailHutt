@@ -9,19 +9,7 @@ class Category(models.Model):
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
     def get_freiendly_name(self):
-        return self.friendly_name
-
-class Services(models.Model):
-
-    class Meta:
-        verbose_name_plural ='Services'
-
-    name = models.CharField(max_length=254, null=True)
-    service = models.OneToOneField('Product', null=True, blank=True, 
-                                    on_delete=models.CASCADE)    
-
-    def __str__(self):
-        return self.name                               
+        return self.friendly_name                               
 
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)

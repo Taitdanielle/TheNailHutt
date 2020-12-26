@@ -25,15 +25,6 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
-
-def services(request):
-    """ A view to display all of the services"""
-    services = Product.objects.filter(is_a_service=True)
-    context = {
-        'services': services,
-    }
-
-    return render(request, 'products/services.html', context)
     
 @login_required
 def add_product(request):
