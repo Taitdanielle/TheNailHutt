@@ -1,1 +1,1 @@
-web: gunicorn thenailhutt.wsgi.application
+web: gunicorn thenailhutt.wsgi:application
