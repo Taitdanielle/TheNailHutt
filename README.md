@@ -1,6 +1,7 @@
 # The Nail Hutt
+
 **The Nail Hutt** is a small Nail Salon litrally in a hutt! The perfect place to get away have a cuppa and a chat while you get your chosen treatments done. 
-You can visit The Nail Hutt, Book an appointment or treat yourself to some lovley nail products that will be delivered straight to your door! nail_care:
+You can visit The Nail Hutt, Book an appointment or treat yourself to some lovley nail products that will be delivered straight to your door! :nail_care:
 
 ## Content
 ---
@@ -9,39 +10,39 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
   * User Stories
   * Design
   * Wireframes
-* #### Features
+* #### Features :ferris_wheel:
   * Existing Features
   * Features Left to Impliment
 * #### Information Architecture
   * Database Choice
   * Data Modeling
-* #### Technologies Used
+* #### Technologies Used  :computer:
   * Languages
   * Libriaries and Frameworks
   * Tools
   * Databases
 * #### Testing
-* #### Deployment
+* #### Deployment :rocket:
 * Local Deployment
 * Heroku Deployment
-* ### Credits
+* ### Credits :credit_card:
 * Code
 * Content and Media
 * Acknowledgments
-### Disclamier 
+### Disclamier :loudspeaker:
 ***
 ## UX
 ### Projet Goals
-#### Target Audience
+#### Target Audience: :dart:
 * People who enjoy lookig after themselves
 * People who like to treat themselves
 * People who enjoy socialising 
 * People who want to purchase various nail care products 
 
-#### Visitor/ User Goals:
+#### Visitor/ User Goals: :clipboard:
 * Purchase products/services that are shown on the website in a safe and secrure enviroment.
 * Get relevent information on the products and treatments available.
-### User Stories
+### User Stories: :book:
 #### Common user stories(guest, new users and authenticated users)
 * As a user, I expect to access the website from any device with ease. So that I can use the website anywhere at anytime.
 * As a user, I expect to easily navigate the website, So I can find out what I am looking for. 
@@ -63,12 +64,14 @@ You can visit The Nail Hutt, Book an appointment or treat yourself to some lovle
 #### Admin(website owner)
 * As a user, I want to have convenient and secure admin interface available only for website admin, so that I can add, edit and remove products/services.
 * As a user, I want to receive emails from the users when they fill out the contact form, so that I can reply on them satisfying users queries.
-### Design 
+### Design :art:
 #### Framework
 * **Bootstrap**, front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 * **JQuery** is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation
 #### Colour Scheme
-I used warm bright colours to go with the company logo.You can see the colours [here](https://github.com/Taitdanielle/TheNailHutt/blob/main/wireframes/colour-palet.png)
+I used warm bright colours to go with the company logo.
+* You can see the colours [here](https://github.com/Taitdanielle/TheNailHutt/blob/main/wireframes/colour-palet.png)
+* You can see the logo [here](https://github.com/Taitdanielle/TheNailHutt/tree/main/wireframes)
 #### Typography 
 The typefaces I used across the project are:
 * [Quicksand](https://fonts.google.com/specimen/Quicksand) I have used for the paragraphs, I really like this font as it goes well with the business logo and it is also easy to read.
@@ -77,12 +80,12 @@ I think both typfaces work well with the style and colours of the website.
 #### Icons
 Icons are used all over the web, They are good at grabbing a users attention. They help users find content quickly and easily. Another advantage of useing them is breaking language barriers too! They create more user-friendly experience by giving the visual clue of the subject.
 * I used [Font Awesome](https://fontawesome.com/) as the main icon library for social media links, forms, cart, user icons in the navigation.
-* I also used some iscons that were found in a free iscon library called [Flaticon](https://www.flaticon.com/) used in the party and landing pages.
-### Wireframes
+* I also used some iscons that were found in a free icon library called [Flaticon](https://www.flaticon.com/) used in the party and landing pages.
+### Wireframes :wrench:
 Balsamiq wireframes tool was used to create all wireframes for this project. I really enjoy using this tool.
 You can find the wireframes for this website [here](https://github.com/Taitdanielle/TheNailHutt/tree/main/wireframes).
 ### Features
-The Nail Hutt is composed by applications: `Landing`, `Partys`, `Products`(Products & Services), `Shopping Cart`, `Checkout` and `Profiles`.
+The Nail Hutt is composed by applications: `Landing`, `Parties`, `Products`(Products & Services), `Shopping Cart`, `Checkout` and `Profiles`.
 ### Existing Features
 #### **NavBar**
 The navbar is fixed at the top of the page at all times, This allows a user to easisly navigate through the website. The name The Nail Hutt is located at the top lefthand corner on a desktop and in the center on smaller devices. It redirects a user to the home/landing page when clicked. On smalled screens such as tablet and mobile the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and will collapse back when clicked again or off the page. 
@@ -147,7 +150,7 @@ Profle feature is available only for authenticated users.
 * Profile page contains Personal info section (username and email displayed). Also it contains 2 buttons Change password and Manage emails (changing the current or adding a new email) that take a user to the corresponding pages (that's a part of Django allauth functionality with a customized templates).
 * Shipping details section allows to save the shipping information, so for the next purchase the fields in the checkout form will be pre-filled with this info. User can update this information anytime.
 * View order history link will redirect a user to the Order History page.
-#### Order history** 
+#### Order history 
 Order history feature is available only for authenticated users.
 
 * If a user has not made any purchases, the paragraph will inform that the order history is empty with a link to the Product page.
@@ -180,9 +183,13 @@ Hitting "logout" button renders logout page, asking to confirm if a user wants t
 
 **404 and 500 error pages**
 Custom 404 and 500 pages contain heading, short information about the error and a button "Back Home". As well as that, they display navbar that allows users to come back easily to any page if they got lost.
-## Features Left to Impliment
-rating, reiews, social log in more products ans services
-## Information Architecture
+## Features Left to Impliment: :construction:
+* Rating to the project and services
+* Reviews section for people to review te experience,
+* Adding other ways to log in such as Social Log ins for easy access
+* More variety in products
+* More services
+## Information Architecture:
 #### Database Choice
 During the development phase I worked with sqlite3 database which is installed with Django.
 For deployment(production), a PostgreSQL database is provided by Heroku as an add-on.
@@ -202,48 +209,67 @@ The User model used in this project is provided by Django as a part of defaults 
 | Postcode |
 | Country |
 
-Products App
+**Products App**
 
-| Name | Database Key | Field Type | Validation |
-|------|:------------:|------------:|----------:|
-| Category |
-| Description |
-| Price |
-| Image |
-| Image URL |
-| SKU |
-
-Category 
+| Name        | Database Key | Field Type | Validation |
+| ----------- |:------------:| ----------:| ----------:|
+| Category    | category| ForeignKey |on_delete=models.SET_NULL|
+| Description | description |TextField| |
+| Price       | price | DecimalField| max_digits=6, decimal_places=2|
+| Image       | image |ImageField| null=True, blank=True|
+| Image URL   | image_url   |      URLField      | max_length=1024, null=True, blank=True|
+| SKU         |sku|CharField|max_length=254, null=True, blank=True|
+| Is a Service |       is_a_service       |BooleanField |default=False|
+ **Services** 
+ | Name         | Dataase Key | Field Type | Validation |
+ | ------------ |:------------:| ----------:| ----------:|
+ | Name         |              |            |            |
+ | Description  | description |  TextField |            |
+ | Price        | price  | DecimanField | max_digits=6, decimal_places=2 |
+ | Is a Service |  is_a_service |BooleanField| default=False |
+ | Image        |  image  | ImageField | null=True, blank=True|
+ | Image URL    |  image_url     |  URLField | max_length=1024, null=True |
+        
+**Category** 
 
 | Name | DataBase Key | Field Type | Validation |
 |------|:-------------:|-----------:|----------:|
-| Programmaric Name | 
-| Friendly Name |
+| Programmaric Name | name|CharField|max_length=254|
+| Friendly Name |firendly_name|CharField| max_length=254, null=True, blank=True |
 
-Checkout App 
+**Checkout App** 
 
-Order
-| Name  |	Database Key |	Field Type |	Validation| 
-|-------:|---------------:|---------:|------------:|
-| Order  |Number	order_number |	CharField	| max_length=32, null=False, editable=False |
-| Profile |	profile |	ForeignKey 'Profile' |	on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' |
-| Full Name |	full_name |	CharField	| max_length=70, null=False, blank=False |
-| Email	email |	EmailField |	| max_length=254, null=False, blank=False |
-| Phone number |	phone_number |	CharField	| max_length=20, null=False, blank=False |
-| Address Line1 |	address_line1 |	CharField	| max_length=60, null=False, blank=False |
-| Address Line2 |	address_line2 |	CharField	| max_length=60, null=False, blank=False |
-| Town/City |	town_or_city |	CharField	| max_length=50, null=False, blank=False
-| County |	county |	CharField	| max_length=50, null=True, blank=True |
-| Postcode |	postcode |	CharField	| ax_length=20, null=True, blank=True |
-| Country |	country |	CountryField	| blank_label='Country*', null=False, blank=False |
-| Purchase Date |	purchase_date |	DateTimeField	| auto_now_add=True |
-| Delivery Cost |	delivery_cost |	DecimalField	| max_digits=6, decimal_places=2, null=False, default=0 |
-| Order Total |	order_total |	DecimalField	m| ax_digits=10, decimal_places=2, null=False, default=0 |
-| Grand Total |	grand_total |DecimalField	| max_digits=10, decimal_places=2, null=False, default=0 |
-| Original Cart |	original_cart |	TextField	| null=False, blank=False, default='' |
-| Stripe Pid |	stripe_pid |	CharField	| max_length=254, null=False, blank=False, default='' |
-| Comment |	comment |	TextField	| max_length=254, null=True, blank=True |
-## Technologies Used
+**Order**
+|          Name |        Database Key |           Field Type |                                                              Validation |
+| -------------:| -------------------:| --------------------:| -----------------------------------------------------------------------:|
+|  Order Number |	order_number |            CharField |                               max_length=32, null=False, editable=False |
+|       Profile |             profile | ForeignKey 'Profile' | on_delete=models.SET_NULL, null=True, blank=True, related_name='orders' |
+|     Full Name |           full_name |            CharField |                                  max_length=70, null=False, blank=False |
+|   Email email |          EmailField |                      |                                 max_length=254, null=False, blank=False |
+|  Phone number |        phone_number |            CharField |                                  max_length=20, null=False, blank=False |
+| Address Line1 |       address_line1 |            CharField |                                  max_length=60, null=False, blank=False |
+| Address Line2 |       address_line2 |            CharField |                                  max_length=60, null=False, blank=False |
+|     Town/City |        town_or_city |            CharField |                                  max_length=50, null=False, blank=False |
+|        County |              county |            CharField |                                    max_length=50, null=True, blank=True |
+|      Postcode |            postcode |            CharField |                                     ax_length=20, null=True, blank=True |
+|       Country |             country |         CountryField |                         blank_label='Country*', null=False, blank=False |
+| Purchase Date |       purchase_date |        DateTimeField |                                                       auto_now_add=True |
+| Delivery Cost |       delivery_cost |         DecimalField |                   max_digits=6, decimal_places=2, null=False, default=0 |
+|   Order Total |         order_total |       DecimalField	m |                   ax_digits=10, decimal_places=2, null=False, default=0 |
+|   Grand Total |         grand_total |         DecimalField |                  max_digits=10, decimal_places=2, null=False, default=0 |
+| Original Cart |       original_cart |            TextField |                                     null=False, blank=False, default='' |
+|    Stripe Pid |          stripe_pid |            CharField |                     max_length=254, null=False, blank=False, default='' |
+|       Comment |             comment |            TextField |                                   max_length=254, null=True, blank=True |
+
+**Order Item Details**
+| Name | Database Key | Field Type | Validation |
+| ---- | ------------ | ---------- | ---------- |
+|Order|order|	ForeignKey 'Order'	|null=False, blank=False, on_delete=models.CASCADE, related_name='orderitems'|
+|Product|	product|	ForeignKey 'Product'|	null=False, blank=False, on_delete=models.PROTECT
+|Quantity	|quantity|	IntegerField|	null=False, blank=False, default=0
+|Item Total	|item_total	|DecimalField	|max_digits=6, decimal_places=2, null=False, blank=False, editable=False|
+                                                                      
+## Technologies Used: :computer:
 ### Languages
 * HTML
 * CSS 
@@ -276,10 +302,10 @@ Order
 * PostgreSQL
 
 
-## Testing
-## Bugs
+## Testing:
+## Bugs: :bug:
 had to change image urls as they were not wokring in large screen size. 
-### Deployment
+### Deployment: :rocket:
 The Nail Hutt was developed using the GitPod online IDE and using Git and GitHub for version control. It is hosted on the Heroku platform.
 ### Local Deployment
 To be able to run this project, the following tools have to be installed:
@@ -305,15 +331,16 @@ To deploy the project to Heroku the following steps need to be completed:
 colours from coloors
 pictures from dreamstime
 * Images from [Pexels](www.pixels.com)
-* Products content and images taken from [here](wwww.nailpolishdirect.co.uk)
+* Products content and images taken from [here](wwww.nailpolishdirect.co.uk) at Nail Polish Direct
 * Logo was created by me in Photoshop before this project
 * Nail pictures from my sisters business [TheNailHutt](https://www.facebook.com/thenailhutt)
 
 
 ### Acknowledgements
 I would like to thank everyone who helped me with this project. I appreciate you all!
-* My mentor Simen Daehlin[best mentor](https://github.com/Eventyret)for his support, tips, advice and also for beleiving in me and making me relise I can actually do it!
-* All the Code Institue Tutors who put up with my many many meltdowns!
-* My fellow students and the Slack Community I don't know where I would have been without the guys on that. But especially [Fran](https://github.com/fdeboo) she kept me going most times and helped me A LOT! What an awesome person.
+* My mentor Simen Daehlin [best mentor](https://github.com/Eventyret) for his support, tips, advice and also for beleiving in me and making me relise I can actually do it!
+* All the Code Institue Tutors who put up with my many many meltdowns! and night hawk antics :joy:
+* My fellow students and the Slack Community I don't know where I would have been without the guys on that.
+*  A big should out to [Fran](https://github.com/fdeboo) she kept me going most times and helped me **A LOT!** What an awesome person she is.
 ## Disclaimer
-This site is made for **educational purposes** only. 
+This site is made for **educational purposes** only. :books: 
