@@ -3,14 +3,19 @@
 {% block content %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
+<div class="container mt-5 mb-5">
 
-{% include 'contact/includes/contact_form.html' %}
+    <!--Contact Heading-->
+    {% include 'contact/includes/contact_heading.html' %}
+    <!-- Contact Form -->
+    <div class="row mt-4">
+        {% include 'contact/includes/contact_form.html' %}
+    </div>
 
-
-{% endblock %}
+    {% endblock %}

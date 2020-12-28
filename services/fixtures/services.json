@@ -1,7 +1,7 @@
 [
     {
     "pk": 1,
-    "model": "services.services",
+    "model": "service.services",
     "fields": {
       "name": "nail_extensions",
       "friendly_name": "Nail Extensions"
@@ -9,7 +9,7 @@
   },
       {
     "pk": 2,
-    "model": "services.services",
+    "model": "service.services",
     "fields": {
       "name": "gelish",
       "friendly_name": "Gelish"
@@ -17,7 +17,7 @@
   },
       {
     "pk": 3,
-    "model": "services.services",
+    "model": "service.services",
     "fields": {
       "name": "nail_art",
       "friendly_name": "Nail Art"

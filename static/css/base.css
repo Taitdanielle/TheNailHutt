@@ -55,6 +55,11 @@ body {
     border: 1px solid black !important;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
 /*------------------- Landing Quote */
 .landing-quote {
 min-height:60vh;
