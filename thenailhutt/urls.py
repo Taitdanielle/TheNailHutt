@@ -27,6 +27,8 @@ urlpatterns = [
     path('contact/', include('contact.urls')),
     path('parties/', include('parties.urls')),
     path('checkout/', include('checkout.urls')),
+    path('events/', include('events.urls')),
+
     
     
 
