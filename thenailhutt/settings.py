@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'bag',
     'contact',
     'parties',
-    'services',
     'checkout',
 
 
@@ -198,3 +197,10 @@ if 'USE_AWS' in os.environ:
 
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+# stripe
+FREE_DELIVERY_THRESHOLD = 30
+STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = ''
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY','')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY','')
