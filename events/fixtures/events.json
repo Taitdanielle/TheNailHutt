@@ -1,0 +1,31 @@
+[
+  {
+    "pk": 1,
+    "model": "events.event",
+    "fields": {
+      "weekday": "Monday",
+      "time": "19.00",
+      "description": "Mega Mondays"
+    }
+  },
+
+  {
+    "pk": 2,
+    "model": "events.event",
+    "fields": {
+      "weekday": "Wednesday",
+      "time": "19.00",
+      "description": "Winning Wednesdays"
+    }
+  },
+
+  {
+    "pk": 3,
+    "model": "events.event",
+    "fields": {
+      "weekday": "Friday",
+      "time": "19.00",
+      "description": "Friend Fridays"
+    }
+  }
+]
