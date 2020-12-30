@@ -7,7 +7,6 @@
       "name": "Jollywood-Snow Biz",
       "description": "Shimmery silvery grey. 14ml",
       "price": 3.90,
-      "is_a_service": "False",
       "category": 1,
       "image": "china-glaze-jollywood-snow-biz.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436789/Nail%20Polish%20/china-glaze-jollywood-2020-holiday-nail-polish-collection-snow-biz-84959-14ml-p33008-122239_medium_np3lbc.jpg"
@@ -21,7 +20,6 @@
       "name": "Jollywood-Celebri Tree",
       "description": " Dark emerald tinsel 14ml.",
       "price": 5.82,
-      "is_a_service": "False",
       "category": 1,
       "image": "china-glaze-jollywood-celebri-tree.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436809/Nail%20Polish%20/china-glaze-jollywood-2020-holiday-nail-polish-collection-celebri-tree-84956-14ml-p33001-122236_medium_wpokx0.jpg"
@@ -35,7 +33,6 @@
       "name": "Jollywood-Deck the Malls",
       "description": "A deep blue glitter 14ml.",
       "price": 5.82,
-      "is_a_service": "False",      
       "category": 1,
       "image": "china-glaze-jollywood-deck-the-malls.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436810/Nail%20Polish%20/china-glaze-jollywood-2020-holiday-nail-polish-collection-deck-the-malls-84958-14ml-p33010-122243_medium_ohqo1x.jpg"
@@ -49,7 +46,6 @@
       "name": "Jollywood-Santa Monica Claus",
       "description": "Classic red holographic flakes 14ml.",
       "price": 5.82,
-      "is_a_service": "False",
       "category": 1,
       "image": "china-glaze-jollywood-santa-monica-claus.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436810/Nail%20Polish%20/china-glaze-jollywood-2020-holiday-nail-polish-collection-santa-monica-claus-84912-14ml-p32993-122233_medium_vwtarg.jpg"
@@ -63,7 +59,6 @@
       "name": "Jollywood-Slay your Line",
       "description": "Purple, blue with a silver shimmer. 14ml.",
       "price": 5.82,
-      "is_a_service": "False",  
       "category": 1,
       "image": "china-glaze-jollywood-slay-your-line.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436811/Nail%20Polish%20/china-glaze-jollywood-2020-holiday-nail-polish-collection-slay-your-line-84916-14ml-p33011-122244_medium_uqpsf1.jpg"
@@ -77,7 +72,6 @@
       "name": "Jollywood-Valet the Sleigh",
       "description": "A deep purple glitter 14ml.",
       "price": 5.82,
-      "is_a_service": "False",      
       "category": 1,
       "image": "china-glaze-jollywood-valet-the-sleigh.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436811/Nail%20Polish%20/china-glaze-jollywood-2020-holiday-nail-polish-collection-valet-the-sleigh-84917-14ml-p33004-122237_medium_xaoepr.jpg"
@@ -91,7 +85,6 @@
       "name": "Jollywood-Kiss Spell",
       "description": "A burgundy shimmer matte 14ml.",
       "price": 8.95,
-      "is_a_service": "False",
       "category": 1,
       "image": "china-glaze-spellbound-kiss-spell.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436811/Nail%20Polish%20/china-glaze-spellbound-2020-halloween-nail-polish-collection-kiss-spell-84929-14ml-p32986-122186_medium_gqr84u.jpg"
@@ -105,7 +98,6 @@
       "name": "Jollywood-Paybacks a Witch",
       "description": "A Enchanting Orange Shimmer 14ml.",
       "price": 8.95,
-      "is_a_service": "False",      
       "category": 1,
       "image": "china-glaze-spellbound-paybacks-a-whitch.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436811/Nail%20Polish%20/china-glaze-spellbound-2020-halloween-nail-polish-collection-paybacks-a-witch-84926-14ml-p32995-122178_medium_msjbnz.jpg"
@@ -119,7 +111,6 @@
       "name": "Jollywood-Spell the Tea",
       "description": "A Grey Shimmer 14ml.",
       "price": 8.95,
-      "is_a_service": "False",      
       "category": 1,
       "image": "china-glaze-spellbound-spell-the-tea.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607436812/Nail%20Polish%20/china-glaze-spellbound-2020-halloween-nail-polish-collection-spell-the-tea-84930-14ml-p32992-122181_medium_a7jjaf.jpg"
@@ -133,7 +124,6 @@
       "name": "Jollywood-Fairy Dust",
       "description": "An enchanting, shimmering topcoat 14ml.",
       "price": 8.95,
-      "is_a_service": "False",      
       "category": 1,
       "image": "china-glaze-fairy-dust.jpg",
       "image_url": "https://res.cloudinary.com/dkvc1tmqp/image/upload/v1607438662/Nail%20Polish%20/china-glaze-fairy-dust_jzuuvf.jpg"
