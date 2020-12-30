@@ -1,31 +1,65 @@
 [
-  {
-    "pk": 1,
-    "model": "events.event",
-    "fields": {
-      "weekday": "Monday",
-      "time": "19.00",
-      "description": "Mega Mondays"
+    {
+        "pk": 1,
+        "model": "events.event",
+        "fields": {
+            "weekday": "Monday",
+            "time": "10.00",
+            "description": "Mega Mondays - mega savings"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "events.event",
+        "fields": {
+            "weekday": "Tuesday",
+            "time": "16.00",
+            "description": "Two for Tuesday - two for the price of one"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "events.event",
+        "fields": {
+            "weekday": "Wednesday",
+            "time": "09.00",
+            "description": "Winning Wednesdays - win prizes"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "events.event",
+        "fields": {
+            "weekday": "Thursday",
+            "time": "15.00",
+            "description": "Thirsty Thursdays - prosecco on arrival"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "events.event",
+        "fields": {
+            "weekday": "Friday",
+            "time": "19.00",
+            "description": "Friend Fridays - bring your freind for free"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "events.event",
+        "fields": {
+            "weekday": "Saturday",
+            "time": "20.00",
+            "description": "Star Saturdays - sing a long"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "events.event",
+        "fields": {
+            "weekday": "Sunday",
+            "time": "18.00",
+            "description": "Sleepy Sundays - come in your pyjamas"
+        }
     }
-  },
-
-  {
-    "pk": 2,
-    "model": "events.event",
-    "fields": {
-      "weekday": "Wednesday",
-      "time": "19.00",
-      "description": "Winning Wednesdays"
-    }
-  },
-
-  {
-    "pk": 3,
-    "model": "events.event",
-    "fields": {
-      "weekday": "Friday",
-      "time": "19.00",
-      "description": "Friend Fridays"
-    }
-  }
 ]
