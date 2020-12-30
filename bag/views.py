@@ -30,7 +30,6 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of specified amount"""
 
     product = get_object_or_404(Product, pk=item_id)
-    service = get_object_or_404(Service, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {}) 
 
