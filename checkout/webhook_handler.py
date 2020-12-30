@@ -32,11 +32,44 @@ class StripeWH_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
-        order_excists = False
-        order = Order.
-        return HttpResponse(
-            content=f'Webhook received: {event["type"]}',
-            status=200)
+        order_exists = False
+        try :
+            order = Order.objects.get(
+                full_name__iexact=shipping_details.name, 
+                email__iexact=shipping_details.email,
+                phone_number__iexact=shipping_details.phone,
+                country__iexact=shipping_details.country,
+                town_or_city__iexact=shipping_details.city,
+                street_address1__iexact=shipping_details.line1,
+                street_address2__ieaxact=shipping_details.line2,
+                county__iexact=shipping_details.state,
+                grand_total=grand_total,
+            )
+            order_exists = True
+            return HttpResponse(
+                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                status=200)
+        except Order.DoesNotExist:
+            for item_id, item_data in json.load(bag).items():
+                order = Order.objects.create(
+                    full_name__iexact=shipping_details.name, 
+                    email__iexact=shipping_details.email,
+                    phone_number__iexact=shipping_details.phone,
+                    country__iexact=shipping_details.country,
+                    town_or_city__iexact=shipping_details.city,
+                    street_address1__iexact=shipping_details.line1,
+                    street_address2__ieaxact=shipping_details.line2,
+                    county__iexact=shipping_details.state,
+
+                )
+                product = Product.objects.get(id=item_id)
+                if isinstance(item_data, int):
+                    order_line_item = OrderLineItem(
+                        order=order,
+                        product=product,
+                        quantity=item_data,
+                    )
+                    order_line_item.save()    
 
     def handle_payment_intent_payment_failed(self, event):
         """
