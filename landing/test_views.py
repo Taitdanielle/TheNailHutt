@@ -9,4 +9,4 @@ class TestLandingViews(TestCase):
         self.assertTemplateUsed(response, "landing/includes/landing_partys.html")
         self.assertTemplateUsed(response, "landing/includes/landing_products.html")
         self.assertTemplateUsed(response, "landing/includes/landing_quote.html")
-        self.assertTemplateUsed(response, "landing/includes/landing_services.html")
+        self.assertTemplateUsed(response, "landing/includes/landing_events.html")

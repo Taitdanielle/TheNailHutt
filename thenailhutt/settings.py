@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 import dj_database_url
 
+if os.path.exists("env.py"):
+    import env
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -21,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ')7r$7xg$1zlkvhhvk_6x33i2=4mw3lf!gr*dcfc=sydtmzz+_g'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -188,20 +191,20 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY_ID')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    STATICFILES_STORAGE = 'customer_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static/'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
+    MEDIAFILES_LOCATION = 'media/'
 
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}'
 
-FREE_DELIVERY_THRESHOLD = 50
-STANDARD_DELIVERY_PERCENTAGE = 10
 
 # stripe
 FREE_DELIVERY_THRESHOLD = 30
 STANDARD_DELIVERY_PERCENTAGE = 10
-STRIPE_CURRENCY = ''
+STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY','')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY','')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+SECRET_KEY = os.getenv('SECRET_KEY')
