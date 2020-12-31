@@ -80,7 +80,7 @@ background-size: cover;
 position: relative;
 opacity: 0.9;
 }
-
+/* toasts */
 .message-container {
     position:fixed;
     top: 72px;
@@ -164,6 +164,24 @@ opacity: 0.9;
     font-size: 1.2rem;
     color: #fff;
 }
+
+/* Events page */
+
+.events-container { 
+    background: url('/static/images/services/event-background-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+    opacity: 0.9;
+}
+
+.heading-events {
+    font-size: 1.8rem;
+}
+
+.events-paragraph {
+    font-size: 1rem;
+}
+
 /* -------------------- Bootstap Toasts */
 .message-container {
     position: fixed;
@@ -171,9 +189,11 @@ opacity: 0.9;
     right: 15px;
     z-index: 99999999999;
 }
-.customer-toast { 
-    overflow: visable;
+
+.custom-toast {
+    overflow: visible;
 }
+
 .toast-capper {
     height: 2px;
 }
