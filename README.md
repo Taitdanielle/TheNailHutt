@@ -85,7 +85,7 @@ Icons are used all over the web, They are good at grabbing a users attention. Th
 Balsamiq wireframes tool was used to create all wireframes for this project. I really enjoy using this tool.
 You can find the wireframes for this website [here](https://github.com/Taitdanielle/TheNailHutt/tree/main/wireframes).
 ### Features
-The Nail Hutt is composed by applications: `Landing`, `Parties`, `Products`(Products & Services), `Shopping Cart`, `Checkout` and `Profiles`.
+The Nail Hutt is composed by applications: `Landing`, `Parties`, `Products`, `Events` , `Shopping Cart`, `Checkout` and `Profiles`.
 ### Existing Features
 #### **NavBar**
 The navbar is fixed at the top of the page at all times, This allows a user to easisly navigate through the website. The name The Nail Hutt is located at the top lefthand corner on a desktop and in the center on smaller devices. It redirects a user to the home/landing page when clicked. On smalled screens such as tablet and mobile the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and will collapse back when clicked again or off the page. 
@@ -98,7 +98,7 @@ The Navbar links change if you are a logged in or non logged in users.
 The landing page serves to attract new users and customers to the business. to give a clear understanding about that and to attract the users to use the website(book appointmnet and buy products).Smooth annimation on the scroll is applied to all sections of the page.
 * Hero image
 * products carousel
-* services carousel 
+* events carousel 
 * quote section
 * party section
 #### **Party Page**
@@ -219,16 +219,13 @@ The User model used in this project is provided by Django as a part of defaults 
 | Image       | image |ImageField| null=True, blank=True|
 | Image URL   | image_url   |      URLField      | max_length=1024, null=True, blank=True|
 | SKU         |sku|CharField|max_length=254, null=True, blank=True|
-| Is a Service |       is_a_service       |BooleanField |default=False|
- **Services** 
+
+ **Events** 
  | Name         | Dataase Key | Field Type | Validation |
  | ------------ |:------------:| ----------:| ----------:|
- | Name         |              |            |            |
- | Description  | description |  TextField |            |
- | Price        | price  | DecimanField | max_digits=6, decimal_places=2 |
- | Is a Service |  is_a_service |BooleanField| default=False |
- | Image        |  image  | ImageField | null=True, blank=True|
- | Image URL    |  image_url     |  URLField | max_length=1024, null=True |
+ | Weekday|       weekday |models.CharField| max_length=10         |
+ | Time  | time |  models.CahrFiels |max_length=80|
+ | Description   | description  | models.CharField | max_length=254 
         
 **Category** 
 
@@ -257,7 +254,7 @@ The User model used in this project is provided by Django as a part of defaults 
 | Delivery Cost |       delivery_cost |         DecimalField |                   max_digits=6, decimal_places=2, null=False, default=0 |
 |   Order Total |         order_total |       DecimalField	m |                   ax_digits=10, decimal_places=2, null=False, default=0 |
 |   Grand Total |         grand_total |         DecimalField |                  max_digits=10, decimal_places=2, null=False, default=0 |
-| Original Cart |       original_cart |            TextField |                                     null=False, blank=False, default='' |
+| Original Bag |       original_bag |            TextField |                                     null=False, blank=False, default='' |
 |    Stripe Pid |          stripe_pid |            CharField |                     max_length=254, null=False, blank=False, default='' |
 |       Comment |             comment |            TextField |                                   max_length=254, null=True, blank=True |
 
@@ -325,8 +322,55 @@ In the terminal window of your local IDE change the directory (CD) to the correc
 #### Heroku Deployment
 To start Heroku Deployment process, you need to clone the project as described in the Local deployment section above.
 To deploy the project to Heroku the following steps need to be completed:
+1. Create a requirement.txt file, which contains a list of the dependencies, using the following command in the terminal:
+pip3 freeze > requirements.txt
+2. Create a **Procfile**, in order to tell Heroku how to run the project, using the following command in the terminal:
+`web: gunicorn thenailhutt.wsgi:application`
+3. `git add`, `git commit` and `git push` these files to GitHub repository.
+**NOTE**: these **1-3 steps** already done in this project and included in the GitHub repository, but illistrated here as they are required for the successfull deployment to Heroku.
+As well as that, other things that are required for the Heroku deployment and have to be **installed**: `gunicorn (WSGI HTTP Server), dj-database-url for database connection and Psycopg (PostgreSQL driver for Python)`. All of the mentioned above are already installed in this project in the requirements.txt file.
+4. On the Heroku website you need to create a new app, assigne a name (must be unique),set a region to the closest to you(for my project I set Europe) and click **Create app**.
+5. Go to Resources tab in Heroku, then in the Add-ons search bar look for Heorku Postgres(you can type postgres), select Hobby Dev — Free and click Provision button to add it to your project.
+6. In Heroku Settings click on Reveal Config Vars.
+7. Set the following config variables there:
+8. Copy DATABASE_URL's value(Postrgres database URL) from the Convig Vars and temporary paste it into the default database in settings.py. You can temporary comment out the current database settings code and just paste the following in the settings.py:
+```
+DATABASES = {     
+        'default': dj_database_url.parse("<your Postrgres database URL here>")     
+    }
+```
+**Important Note: that's just temporary set up, this URL should not be committed and published to GitHub for security reasons, so make sure not to commit your changes to Git while the URL is in the settings.py.**
+9. Migrate the database models to the Postgres database using the following commands in the terminal:
+`python3 manage.py makemigrations`
+`python3 manage.py migrate`
+10. Load the data fixtures **(categories, products, Parties,events etc)** into the Postgres database using the following command:
+`python3 manage.py loaddata <fixture_name>`
+11. Create a superuser for the Postgres database by running the following command(you need to follow the instructions and inserting username,email and password):
+python3 manage.py createsuperuser
+12. You need to **remove** your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file.
+**Note**: *for production you get the environment variable 'DATABASE_URL' from the Heroku Config Vars and use Postgress database, while for development you use the SQLite as a default database.*
+13. Add your Heroku app URL to ALLOWED_HOSTS in the settings.py file. 14. You can connect Heroku to GitHub to automatically deploy each time you push to GitHub.
+To do so, from the Heroku dashboard follow the steps:
+
+* Deploy section -> Deployment method -> select GitHub
+* Link the Heroku app to your GitHub repository for this project
+* Click Enable Automatic Deploys in the Automatic Deployment section
+* Run `git push` command in the terminal, that would now push your code to both Github and Heroku, and perform the deployment.
+Alternatively, in the terminal you can run:
+
+* `heroku login`
+* after adding and comitting to Git, run the following command:
+`git push heroku master`
+15. After successful deployment, you can view your app bu clicking Open App on Heroku platform.
+16. You will also need to verify your email address, so you need to login with your superuser credentials and verify your email address in the admin panel. Now you will be able to view the app running!
+#### Hosting media files with AWS
+The static files and media files (that will be uploaded by superuser - product/service images) are hosted in the AWS S3 Bucket. To host them, you need to create an account in AWS and create your S3 basket with public access. More about setting it up you can read in Amazon S3 documentation and this tutorial. 
 ## Credits
 ### Code
+* The projects code was developed by following the Code Institute and based on the understanding of the Boutique Ado Django Project, but was customised and enhanced to fir the purpose of mt chosen idea. some comments with the credits to that modle are added to some parts of the code where needed. 
+* Stack Overflow was extreamley helpful and useful during the process of building the this project, credits again are given for the certain solutions are given in the comments. 
+* I also was always checking and reffering the following documentation durgont he development django and stripe crispy forms
+
 ### Content and Media
 colours from coloors
 pictures from dreamstime
