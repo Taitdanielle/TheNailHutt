@@ -160,9 +160,13 @@ opacity: 0.9;
     color:#F6C0D0 ;
 }
 
-.parties-paragraph {
+.landing-paragraph {
     font-size: 1.2rem;
     color: #fff;
+}
+party-landing-container {
+    font-size: 1.8rem;
+    color:#F6C0D0 ;
 }
 
 /* Events page */
@@ -181,7 +185,18 @@ opacity: 0.9;
 .events-paragraph {
     font-size: 1rem;
 }
+.events-text-block {
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px;
 
+}
+
+.events- {
+    left: -3.125rem;
+    top: -3.75rem;
+    position: relative;
+    z-index: -1;
+}
 /* -------------------- Bootstap Toasts */
 .message-container {
     position: fixed;
