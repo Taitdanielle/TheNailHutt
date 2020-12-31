@@ -113,11 +113,10 @@ There's also a Find us here section, showing the address, phone number and the l
 * The item quantity can be assigned filling the quantity form, the validation is in place restricting the quantity to the range of 1-999. The validation errors will be displayed, if the user tries to input the numbers outside of that range.
 Product can be added to the cart by clicking Add to cart button, that will be reflected in the cart icon in the navbar (grand total will be increased there). As well as that, the toast success message will be displayed when the product is added to the cart.
 * If the user is admin, there are also 2 buttons displayed below the product name: Edit and Delete. Clicking Edit button redirects admin to the Edit Product page. Delete button toggles the Delete modal. It asks a superuser to confirm if the product is to be deleted. If so, upon clicking "Delete" button, the product will not be removed from the database, but will set as discontinued and will be removed from the user's view. Then the page reloads and the toast-message will inform about the sucessfull deletion. There is also a button "Cancel" that closes the modal when it's clicked. These actions can be done only by a superuser, attempts to access them by other users will end up with redirection to the landing page with toast error messages displayed.
-#### **Services Page**
+#### **Events Page**
 * The Services page displays horizontal services cards including the following information: name, description, price and image. No-image placeholder is assigned if no image is provided.
-* The Button "Learn more" redirects a user to the individual service page with detailed information.
-* Similar to products, Edit and Delete are displayed on the cards if the user is admin with the corresponding functionality to render Edit Service page and toggle Delete modal.
-#### **Service Details Page**
+* The Button "Learn more" redirects a user to the individual events page with detailed information.
+
 #### **Shopping Cart**
 * Cart page is available for both logged in and non-logged in users, so that it is possible to make purchase being a guest.
 The page contains a summary of the user's order: the item's name, image, quantitie/ number of participants, price, sub-total and sku(for products).
@@ -300,8 +299,59 @@ The User model used in this project is provided by Django as a part of defaults 
 
 
 ## Testing:
-## Bugs: :bug:
-had to change image urls as they were not wokring in large screen size. 
+### Landing page
+User story being tested:
+As a user, I want to read a summary info about the business, its ideas and benifits, so that I can quickly decide if it satisfies my needs.
+* Test:
+click all the buttons accross the page
+scroll down the page to check the animation on scroll (AOS)
+check all the image-carousels and reviews-carousel by clicking on chevrons
+verify that the expected text, icons and images are displayed
+* Results:
+all the buttons redirect to the corresponding pages (About, Parties, Products, Events and Contact)
+the hover effect on buttons works as expected (expanding, changing background colour)
+animation on scroll works as expected on all sections and across all devices
+image and review carousels display correctly when chevrons are clicked
+all the text sections, icons and all the images display correctly, changing the position, size when viewed on different screens
+Verdict: Test passed. All the functionality works as expected, no bugs were found during the testing.
+
+### Events page
+User story being tested:
+As a user, I want to view events that happen in the the salon
+* Test:
+verify that images are displayed correctly
+verify that the data from the Events model is displayed correctly in the events table
+scroll down the page to check the animation on scroll (on the text and teapot image)
+click on the Facebook link
+* Results:
+all the images and texts are displayed correctly on different screens
+animation on scroll works as expected on all sections and across all devices
+Facebook link opens in the new tab leading to the main page (since there is no real page exists for the website)
+Verdict: Test passed. All the functionality works as for some reason the tablets doesnt display, but due to time constraints I didnyt have time to fix.
+
+### Contact page
+User stories being tested:
+As a user, I want to see the location of the Tea Club on a map, so that I can find the address easily and come to the advertised events.
+As a user, I want to be able to easily contact the owner/manager of the company, so that I can write an additional query or ask a question.
+Admin: As a user, I want to receive emails from the users when they fill out the contact form, so that I can reply on them satisfying users queries.
+* Test:
+check that a graphic image is displayed only on the large screen
+try to submit an empty Contact form
+try to enter incorrect email address (without @)
+try to submit the form with all valid information
+check the contact form as authenticated user to see if the full name and email fields are pre-populated
+check the map, clicking on the red marker, zoom controllers
+* Results:
+the image and contact information are displayed correctly on different screens
+after attempts to submit invalid form (empty or invalid informations) corresponding validation messages appears to prevent the submission
+if the form was valid and "Send" button clicked, a user is redirected to the "Thank you" page, informing that the message was sent
+if the form was submitted successfully, an admin of the website received the real message on the email (it is assigned in the environment variables as EMAIL_HOST_USER)
+if the user is authenticated, the email field is always pre-populated
+if the user is authenticated and has the full name is saved in the Profile information, the full name is pre-populated in the contact form
+map on the contact page displays the correct location, the Info Window shows the opening hours, when the red marker is clicked. Zoom controllers also work correctly.
+after successfull contact form submission, admin of the store receives the message on their personal email, getting user's email and full name, so an admin can answer the query directly to the user's email
+Verdict: Test passed. All the functionality works as expected, no bugs were found during the testing.
+
 ### Deployment: :rocket:
 The Nail Hutt was developed using the GitPod online IDE and using Git and GitHub for version control. It is hosted on the Heroku platform.
 ### Local Deployment
