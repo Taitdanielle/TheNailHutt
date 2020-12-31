@@ -7,7 +7,7 @@ body {
 
 .hero-image {
     height: 100vh;
-    background: url('/media/home1.jpg') no-repeat center center fixed;
+    background: url('/static/images/landing/home1.jpg') no-repeat center center fixed;
     background-size: cover;
     }
     
